@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/start_Fragment">
+    <fragment
+        android:id="@+id/flavor_fragment"
+        android:name="com.example.cookiesapp.flavor_fragment"
+        android:label="fragment_flavor_fragment"
+        tools:layout="@layout/fragment_flavor_fragment" >
+        <action
+            android:id="@+id/action_flavor_fragment_to_pickup_fragment"
+            app:destination="@id/pickup_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/start_Fragment"
+        android:name="com.example.cookiesapp.start_Fragment"
+        android:label="fragment_start_"
+        tools:layout="@layout/fragment_start_" >
+        <action
+            android:id="@+id/action_start_Fragment_to_flavor_fragment"
+            app:destination="@id/flavor_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pickup_fragment"
+        android:name="com.example.cookiesapp.pickup_fragment"
+        android:label="fragment_pickup_fragment"
+        tools:layout="@layout/fragment_pickup_fragment" >
+        <action
+            android:id="@+id/action_pickup_fragment_to_summary_Fragment2"
+            app:destination="@id/summary_Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/summary_Fragment2"
+        android:name="com.example.cookiesapp.summary_Fragment"
+        android:label="fragment_summary_"
+        tools:layout="@layout/fragment_summary_" />
+</navigation>

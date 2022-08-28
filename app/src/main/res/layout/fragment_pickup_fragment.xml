@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pickup_fragment"
+    android:background="@drawable/image66">
+
+    <RadioButton
+        android:id="@+id/option0"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> viewModel.setDate(viewModel.dateOptions[0])}"
+        android:text="@{viewModel.dateOptions[0]}"
+        tools:text="Thursday" />
+
+    <RadioButton
+        android:id="@+id/option1"
+        android:layout_marginTop="110dp"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> viewModel.setDate(viewModel.dateOptions[1])}"
+        android:text="@{viewModel.dateOptions[1]}"
+        tools:text="Friday" />
+
+    <RadioButton
+        android:id="@+id/option2"
+        android:textSize="20dp"
+        android:layout_marginTop="180dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> viewModel.setDate(viewModel.dateOptions[2])}"
+        android:text="@{viewModel.dateOptions[2]}"
+        tools:text="Saturday" />
+
+
+
+</FrameLayout>
